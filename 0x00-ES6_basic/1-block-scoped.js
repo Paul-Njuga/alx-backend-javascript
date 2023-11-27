@@ -6,11 +6,14 @@ export default function taskBlock(trueOrFalse) {
     /*
     Lets disable eslint for the next two lines,
     so it doesn't cry about unused consts
+    Single line disable: "// eslint-disable-next-line",
+    Block disable: ...'
     */
-    // eslint-disable-next-line
+
+    /* eslint-disable */
     const task = true;
-    // eslint-disable-next-line
     const task2 = false;
+    /* eslint-enable */
   }
   return [task, task2];
 }
