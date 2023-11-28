@@ -1,3 +1,10 @@
+/*
+ * With template literals, you can:
+ * 	interpolate variables & expressions into strings
+ * 	use both single & double quotes inside a string
+ * 	create multiline strings
+ */
+
 export default function getSanFranciscoDescription() {
   const year = 2017;
   const budget = {
