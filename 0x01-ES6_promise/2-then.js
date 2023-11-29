@@ -1,14 +1,16 @@
 export default function handleResponseFromAPI(promise) {
-  return new Promise((resolve, reject) => {
-    const data = { status: 200, body: 'success' };
+  /*
+   * We don't need to create a new Promise bcs,
+   * we already have the resolved `promise`
+   * Thus, we'll return (not resolve/reject) the obj on resolution,
+   * or error on rejection
+   */
 
-    if (promise) resolve(data);
-    else reject(new Error());
-
+  return promise
     /* Use .then() to handle resolution inside func */
-    Promise.resolve()
-      .then(() => {
-        console.log('Got a response from the API');
-      });
-  });
+    .then(() => {
+      console.log('Got a response from the API');
+      return { status: 200, body: 'success' };
+    })
+    .catch(() => new Error());
 }
