@@ -7,11 +7,11 @@ export default function handleResponseFromAPI(promise) {
    */
 
   return promise
-    /* Use .then() to handle resolution inside func */
+    /* Use .then() to return obj on resolution */
     .then(() => {
       console.log('Got a response from the API');
       return { status: 200, body: 'success' };
     })
-    /* Use .catch() to handle rejection */
+    /* Use .catch() to return empty error obj on rejection */
     .catch(() => new Error());
 }
