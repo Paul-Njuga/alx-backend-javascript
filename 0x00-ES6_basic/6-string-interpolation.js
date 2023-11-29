@@ -1,8 +1,8 @@
 /*
  * With template literals, you can:
- * 	interpolate variables & expressions into strings
- * 	use both single & double quotes inside a string
- * 	create multiline strings
+ *   interpolate variables & expressions into strings
+ *   use both single & double quotes inside a string
+ *   create multiline strings
  */
 
 export default function getSanFranciscoDescription() {
