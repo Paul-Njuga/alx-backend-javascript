@@ -21,7 +21,5 @@ export default function handleProfileSignup() {
       /* Extract the relevant info */
       console.log(`${photoData.body} ${userData.firstName} ${userData.lastName}`);
     })
-    .catch(() => {
-      console.error('Signup system offline');
-    });
+    .catch(() => console.error('Signup system offline'));
 }
