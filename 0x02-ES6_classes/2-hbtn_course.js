@@ -1,0 +1,50 @@
+/**
+ * Represents an alx course.
+ * @class
+ */
+export default class HolbertonCourse {
+  /**
+   * Create a course.
+   * @constructor
+   * @param {string} name - Name of the course.
+   * @param {number} length - Length of time in years.
+   * @param {Array<string>} students - An array of students.
+   */
+  constructor(name, length, students) {
+    this._name = name;
+    this._length = length;
+    this._students = students;
+  }
+
+  /* Getter methods for each attribute */
+  get name() {
+    return this._name;
+  }
+
+  get length() {
+    return this._length;
+  }
+
+  get students() {
+    return this._students;
+  }
+
+  /**
+   * Setter methods for each attribute with type validation.
+   * @param {string|number|Array} value - The value to set.
+   */
+  set name(value) {
+    if (typeof value === 'string') this._name = value;
+    else throw new TypeError('Name must be a string');
+  }
+
+  set length(value) {
+    if (typeof value === 'number') this._length = value;
+    else throw new TypeError('Length must be a number');
+  }
+
+  set students(value) {
+    if (Array.isArray(value)) this._length = value;
+    else throw new TypeError('Students must be an array');
+  }
+}
