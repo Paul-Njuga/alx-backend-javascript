@@ -2,6 +2,8 @@
  * Represents an alx course.
  * @class
  */
+
+/* eslint-disable no-underscore-dangle */
 export default class HolbertonCourse {
   /**
    * Create a course.
@@ -29,6 +31,7 @@ export default class HolbertonCourse {
   get name() {
     return this._name;
   }
+
   set name(value) {
     if (typeof value === 'string') this._name = value;
     else throw new TypeError('Name must be a string');
@@ -37,6 +40,7 @@ export default class HolbertonCourse {
   get length() {
     return this._length;
   }
+
   set length(value) {
     if (typeof value === 'number') this._length = value;
     else throw new TypeError('Length must be a number');
@@ -45,6 +49,7 @@ export default class HolbertonCourse {
   get students() {
     return this._students;
   }
+
   set students(value) {
     if (Array.isArray(value)) this._length = value;
     else throw new TypeError('Students must be an array');
