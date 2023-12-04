@@ -11,6 +11,11 @@ export default class HolbertonCourse {
    * @param {Array<string>} students - An array of students.
    */
   constructor(name, length, students) {
+    /* Verify type during object creation */
+    if (typeof name !== 'string') throw new TypeError('Name must be a string');
+    else if (typeof length !== 'number') throw new TypeError('Length must be a number');
+    else if (!Array.isArray(students)) throw new TypeError('Students must be an array');
+
     this._name = name;
     this._length = length;
     this._students = students;
