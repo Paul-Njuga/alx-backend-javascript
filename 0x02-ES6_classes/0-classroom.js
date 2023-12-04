@@ -2,6 +2,8 @@
  * Represents a classroom.
  * @class
  */
+
+/* eslint-disable no-underscore-dangle */
 export default class ClassRoom {
   /**
    * Create a classroom.
