@@ -18,8 +18,9 @@ export default class Currency {
   }
 
   /**
-   * Attribute getter & setter methods with type validation.
-   * @param {string} value
+   * Getter methods for each attribute.
+   * Setter methods for each attribute with type validation.
+   * @param {string} value - The value to set.
    */
   get code() {
     return this._code;
