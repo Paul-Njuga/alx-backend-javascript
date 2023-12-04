@@ -2,8 +2,6 @@
  * Represents an alx course.
  * @class
  */
-
-/* eslint-disable no-underscore-dangle */
 export default class HolbertonCourse {
   /**
    * Create a course.
