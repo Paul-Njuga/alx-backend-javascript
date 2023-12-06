@@ -5,9 +5,11 @@ module.exports = {
    jest: true,
    node: true,
  },
+ parser:  '@typescript-eslint/parser',
  extends: [
    'airbnb-base',
    'plugin:jest/all',
+   'plugin:@typescript-eslint/recommended',  // Uses the recommended rules from @typescript-eslint/eslint-plugin
  ],
  globals: {
    Atomics: 'readonly',
