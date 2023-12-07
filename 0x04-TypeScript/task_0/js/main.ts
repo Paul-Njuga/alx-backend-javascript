@@ -6,7 +6,7 @@ interface Student {
     location: string;
 }
 
-/* create two students */
+/* Create two students */
 const student1: Student = {
   firstName: 'Jane',
   lastName: 'Doe',
@@ -21,7 +21,7 @@ const student2: Student = {
   location: 'Rongai'
 };
 
-/* create an array named studentsList */
+/* Create an array named studentsList */
 const studentsList: Student[] = [student1, student2];
 
 /* Create a table */
